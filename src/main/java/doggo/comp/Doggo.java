@@ -1,19 +1,20 @@
 package doggo.comp;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Doggo {
 
-	public String returnList(int dog) {
+	public List<String> returnList(int dog) {
 
-		ArrayList<String> doggos = new ArrayList<String>();
+		List<String> doggos = new ArrayList<String>();
 
-		dog = 7;
+		dog = 11;
 
 		for (int i = 1; i < 101; i++) {
 			if (i == dog) {
-				i = dog;
-			} else if (i > 3 && i < 21) {
+				continue;
+			} else if (i > 10 && i < 14) {
 				doggos.add(i + "th");
 			} else if (i % 10 == 1) {
 				doggos.add(i + "st");
@@ -26,7 +27,8 @@ public class Doggo {
 			}
 
 		}
-		return "";
+		return doggos;
+
 	}
 
 	public static void main(String[] args) {

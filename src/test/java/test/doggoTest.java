@@ -8,22 +8,22 @@ import doggo.comp.Doggo;
 
 public class doggoTest {
 
-	@Test
-	public void test1() {
-		String expected = "This list is 99 entries long";
-		String actual = "1";
+	Doggo dog = new Doggo();
 
-		assertEquals(expected, actual);
+	@Test
+	public void testContains() {
+
+		assertEquals(true, dog.returnList(11).contains("12th"));
 	}
 
 	@Test
-	public void test2() {
-		Doggo dog = new Doggo();
+	public void testDoesntContain() {
+		assertEquals(false, dog.returnList(11).contains("11th"));
+	}
 
-		Boolean expected = false;
-		String actual = dog.returnList(7);
-
-		assertEquals(expected, actual);
+	@Test
+	public void testListSize() {
+		assertEquals(false, dog.returnList(11).size() == 99);
 	}
 
 }
