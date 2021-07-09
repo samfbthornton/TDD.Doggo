@@ -23,7 +23,7 @@ public class doggoTest {
 
 	@Test
 	public void testListSize() {
-		assertEquals(false, dog.returnList(11).size() == 99);
+		assertEquals(true, dog.returnList(11).size() == 99);
 	}
 
 }

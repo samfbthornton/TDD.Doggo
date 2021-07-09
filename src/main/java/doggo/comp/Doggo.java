@@ -9,7 +9,7 @@ public class Doggo {
 
 		List<String> doggos = new ArrayList<String>();
 
-		dog = 11;
+		dog = 99;
 
 		for (int i = 1; i < 101; i++) {
 			if (i == dog) {
@@ -30,9 +30,4 @@ public class Doggo {
 		return doggos;
 
 	}
-
-	public static void main(String[] args) {
-
-	}
-
 }
